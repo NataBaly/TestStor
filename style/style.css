@@ -187,6 +187,12 @@ h3
     border: 2px solid #222299;
     transition: 500ms;
 }
+.btn4:hover
+{
+    color: #222299;
+    border: 2px solid #222299;
+    transition: 500ms;
+}
 
 .footer
 {
