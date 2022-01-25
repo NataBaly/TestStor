@@ -12,23 +12,7 @@ h1{
     color: #19191B;
     
 }
-h2
-{
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: -1.87579px;
-    color: #19191B;
-}
 
-h3
-{
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 57px;
-    letter-spacing: -1.56316px;
-    color: #19191B;
-}
 
 .container
 {
@@ -73,15 +57,7 @@ h3
     text-decoration:none;
 }
 
-.nav-link1
-{
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: -0.468947px;
-    color:#19191B;
-    text-decoration:none;   
-}
+
 
 .nav-link:hover
 {
@@ -187,74 +163,11 @@ h3
     border: 2px solid #222299;
     transition: 500ms;
 }
-.btn4:hover
-{
-    color: #222299;
-    border: 2px solid #222299;
-    transition: 500ms;
-}
+
 
 .footer
 {
     padding: 53px 0; 
 }
 
-.about-title2
-{
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 57px;
-    letter-spacing: -1.56316px;
-    color: #19191B;
-    margin-bottom: 50px;
-    font-family: 'DM Sans', sans-serif;
-}
-.kartochki-title
-{
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 70px;
-    letter-spacing: -1.87579px;
-    color: #19191B;
-    font-family: 'DM Sans', sans-serif;
-    
-}
- 
-.btn4
-{
-    width: 302px;
-    height: 60px;
-    background: none;
-    border: 1px solid #5454D4;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 22px;
-    text-align: left;
-    letter-spacing: -0.531474px;
-    color: #5454D4;
-    cursor: pointer;
-    margin-right: 35px;
-    padding-left: 14px;
-    
-}
-.knopki
-{
-    display: flex;
-    justify-content: space-between;
-    
-}
 
-.karta2
-{
-    margin-top: 62px;
-}
-.karty
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 80px;
-}
