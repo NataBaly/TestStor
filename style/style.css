@@ -13,7 +13,7 @@ h1{
     
 }
 
-
+/* определение ширины контента */
 .container
 {
         max-width: 1070px;
@@ -21,13 +21,15 @@ h1{
 
 }
 
+/* фон хедера и футера и отступы от текста до края */
 .header, .footer
 {
     background: rgba(255, 113, 67, 0.27);
     padding: 38px 0 48px;
 }
 
-.header-flex, .footer-flex, .about
+ /* для расположения элементов по ширине container*/
+.header-flex, .footer-flex, .about, .subscribe, .plan-flex
 {
     display: flex;
     justify-content: space-between;
@@ -157,7 +159,7 @@ h1{
     margin-left: 35px;
 }
 
-.btn3:hover
+.btn3:hover /*псевдокласс пишется через двоеточие*/
 {
     color: #222299;
     border: 2px solid #222299;
@@ -170,4 +172,144 @@ h1{
     padding: 53px 0; 
 }
 
+.subscribe
+{
+    margin-bottom: 85px;
+}
+
+.subscribe-title
+{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56316px;
+    color: #19191B;
+    margin-bottom: 38px;
+}
+.input
+{
+    width: 302px;
+    height: 60px;
+    border: 1px solid #7087FF;
+    border-radius: 10px;
+    padding-left: 14px;
+    box-sizing: border-box;/*оставляет ширину, независимо от паддингов и бордера*/
+    margin-right: 39px; /*отступ от кнопки справа*/
+}
+
+/*псевдоэлемент пишется через два двоеточие*/
+.input::placeholder, .input
+{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #000000;
+}
+
+.input:focus /*fokus - это псевдокласс*/
+{
+    outline: none; /*отключили жирную обводку*/
+}
+.plan /*контейнер с карточками*/
+{
+    margin-bottom: 132px; /*отступ от контейнера до футера*/
+}
+.plan-title
+{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+    max-width: 504px;
+    margin-bottom: 110px; /*отступ от заголовка до карточки*/
+}
+
+.item /*карточка*/
+{
+    width: 330px;
+    /*высоту не надо*/
+    background: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 34px 0 27px 0; /*отступы внутри карточки от текста до верхнего края и от кнопки до низу*/
+}
+
+.item:hover
+{
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827); /* тень, кот появляется при наведении*/
+    transition:500ms;  /*плавность появления тени*/
+}
+
+.item-text
+{
+    font-size: 18px;
+    line-height: 28px;
+    /* text-align: center; - не нужен, т.к. прописан выше в карточке*/
+    letter-spacing: -0.562737px;
+    color: #696871;
+  }
+
+.item:hover .item-text
+{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.item:hover .item-title, .item:hover .item-li
+{
+    color: #FFFFFF;
+    transition: 500ms;
+}
+
+
+.item-title
+{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+    margin: 22px 0 28px;
+}
+
+.item-title span
+{
+    font-size: 28px;
+}
+
+.item-li
+{
+    list-style: none; /* убираем точки в списке*/
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.531474px;
+    color: #696871;
+     
+}
+
+
+
+/*  .item-li-class
+{  margin-bottom: 36px; --- сделали верхний отступ от кнопки .button-item до списка }  */
+
+.button-item
+{
+    width: 285px;
+    height: 60px;
+    background: white;
+    color: #5454D4;
+    border: 1px solid #EAE9F2;
+    border-radius: 10px;
+    margin-top: 36px;
+}
+
+.item:hover .button-item
+{
+    background: #9F3919;
+    color: #FFFFFF;
+    transition: 500ms;
+    border: none;
+}
 
